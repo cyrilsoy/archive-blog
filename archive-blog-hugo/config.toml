@@ -1,0 +1,38 @@
+baseURL = "https://cyrilsoy.github.io/"
+title = "一缕光"
+theme = "etch"
+languageCode = "en-us"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  description = "The stars, my destination."
+  copyright = "© 2020 一缕光."
+  dark = "auto"
+  highlight = true
+  
+staticDir = ["static"]
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    weight = 10
+    identifier = "Posts"
+    url = "/"
+
+  [[menu.main]]
+    identifier = "About"
+    name = "About"
+    title = "About"
+    url = "/about/"
+    weight = 20
+
+[permalinks]
+  posts = "/post/:slug/"
+
+[markup.goldmark.renderer]
+  # Allows HTML in Markdown
+  unsafe = true
+
+DisablePathToLower = true
